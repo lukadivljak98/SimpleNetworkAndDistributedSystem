@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-26T12:13:40</date>
+  <millis>1650968020274</millis>
+  <sequence>0</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:13:47</date>
+  <millis>1650968027745</millis>
+  <sequence>1</sequence>
+  <logger>org.apache.axis.utils.JavaUtils</logger>
+  <level>WARNING</level>
+  <class>org.apache.axis.utils.JavaUtils</class>
+  <method>isAttachmentSupported</method>
+  <thread>13</thread>
+  <message>Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.</message>
+</record>
+<record>
+  <date>2022-04-26T12:13:48</date>
+  <millis>1650968028572</millis>
+  <sequence>2</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:14:25</date>
+  <millis>1650968065825</millis>
+  <sequence>3</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:15:13</date>
+  <millis>1650968113871</millis>
+  <sequence>4</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:15:34</date>
+  <millis>1650968134209</millis>
+  <sequence>5</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:16:07</date>
+  <millis>1650968167427</millis>
+  <sequence>6</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:16:09</date>
+  <millis>1650968169090</millis>
+  <sequence>7</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:16:27</date>
+  <millis>1650968187831</millis>
+  <sequence>8</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:16:36</date>
+  <millis>1650968196312</millis>
+  <sequence>9</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:16:41</date>
+  <millis>1650968201044</millis>
+  <sequence>10</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:16:45</date>
+  <millis>1650968205306</millis>
+  <sequence>11</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:17:46</date>
+  <millis>1650968266615</millis>
+  <sequence>12</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:17:47</date>
+  <millis>1650968267798</millis>
+  <sequence>13</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:18:04</date>
+  <millis>1650968284075</millis>
+  <sequence>14</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:18:17</date>
+  <millis>1650968297194</millis>
+  <sequence>15</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:18:29</date>
+  <millis>1650968309734</millis>
+  <sequence>16</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:18:34</date>
+  <millis>1650968314025</millis>
+  <sequence>17</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:18:42</date>
+  <millis>1650968322029</millis>
+  <sequence>18</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+<record>
+  <date>2022-04-26T12:18:51</date>
+  <millis>1650968331291</millis>
+  <sequence>19</sequence>
+  <logger>javafx</logger>
+  <level>WARNING</level>
+  <class>javafx.fxml.FXMLLoader$ValueElement</class>
+  <method>processValue</method>
+  <thread>13</thread>
+  <message>Loading FXML document with JavaFX API of version 17 by JavaFX runtime of version 8.0.311</message>
+</record>
+</log>

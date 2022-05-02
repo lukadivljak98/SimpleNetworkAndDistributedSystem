@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PregledajKorisnikeController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-4.0" layoutY="1.0" prefHeight="400.0" prefWidth="606.0" spacing="20.0">
+         <children>
+            <TableView fx:id="korisniciTable" prefHeight="369.0" prefWidth="406.0">
+              <columns>
+                <TableColumn fx:id="korisnikCol" prefWidth="196.800048828125" text="Korisnik" />
+                  <TableColumn fx:id="stanicaCol" prefWidth="208.79998779296875" text="Stanica" />
+              </columns>
+            </TableView>
+            <Button mnemonicParsing="false" onAction="#goBack" text="Back" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SlanjeIzvjestajaController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="14.0" layoutY="51.0" prefHeight="110.0" prefWidth="570.0" />
+      <Button layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button layoutX="346.0" layoutY="174.0" mnemonicParsing="false" onAction="#posaljiIzvjestaj" text="Posalji Izvjestaj" />
+      <TextField fx:id="nazivTf" layoutX="165.0" layoutY="174.0" />
+      <Label layoutX="99.0" layoutY="178.0" text="Naziv fajla:" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="220.0" prefHeight="166.0" prefWidth="368.0">
+        <columns>
+          <TableColumn fx:id="izvjestajiColumn" prefWidth="367.20001220703125" text="Izvjestaji" />
+        </columns>
+      </TableView>
+      <Button layoutX="394.0" layoutY="361.0" mnemonicParsing="false" onAction="#preuzmiIzvjestaj" text="Preuzmi izvjestaj" />
+   </children>
+</AnchorPane>

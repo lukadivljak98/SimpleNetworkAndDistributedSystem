@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/jedis_files/commons-pool2-2.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/jedis_files/jedis-2.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/json-simple/json-simple-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/jackson-files/jackson-annotations-2.13.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/jackson-files/jackson-core-2.13.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/jackson-files/jackson-databind-2.13.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/json-files/json-20220320.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/gson_files/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/Documents/xstream-1.4.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/.p2/pool/plugins/org.apache.axis_1.4.0.v201411182030/lib/axis.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/.p2/pool/plugins/org.apache.commons.discovery_0.2.0.v201004190315/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/.p2/pool/plugins/javax.xml.rpc_1.1.0.v201209140446/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/.p2/pool/plugins/javax.xml.soap_1.2.0.v201005080501/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/.p2/pool/plugins/javax.wsdl_1.6.2.v201012040545.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luka/.p2/pool/plugins/org.apache.commons.logging_1.2.0.v20180409-1502.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

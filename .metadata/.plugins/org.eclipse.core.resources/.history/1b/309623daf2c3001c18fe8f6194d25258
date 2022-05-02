@@ -1,0 +1,104 @@
+package application;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import model.Linija;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class RedVoznjeController implements Initializable{
+	
+	@FXML
+    private TableColumn<Linija, String> LinijaColumn;
+
+    @FXML
+    private TableColumn<Linija, String> StaniceColumn;
+
+    @FXML
+    private TableView<Linija> tableView;
+
+	private static final String BASE_URL = "http://localhost:4200/CZSServer/rest/linije";
+	ObservableList<Linija> observableList = FXCollections.observableArrayList();
+	private ObjectMapper mapper = new ObjectMapper();
+	
+	public void goBack(ActionEvent event) throws IOException {
+		new Main().changeScene("ZS.fxml");
+	}
+
+	private String readAll(BufferedReader reader) {
+		StringBuilder sb = new StringBuilder();
+		int c;
+		try {
+			while((c = reader.read())!=-1)
+				sb.append((char)c);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return sb.toString();
+	}
+	
+	public JSONArray readAllJSON() throws IOException, JSONException {
+		InputStream is = null;
+		try {
+			is = new URL(BASE_URL).openStream();
+			BufferedReader reader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+			String jsonText = readAll(reader);
+			JSONArray json = new JSONArray(jsonText);
+			return json;
+		} 
+		finally {
+			is.close();
+		}
+	}
+	
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		try {
+			getJSONObjects();
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+		
+		LinijaColumn.setCellValueFactory(new PropertyValueFactory<Linija, String>("naziv"));
+		StaniceColumn.setCellValueFactory(new PropertyValueFactory<Linija, String>("linija"));
+	
+		tableView.setItems(observableList);
+	}
+	
+	private void getJSONObjects() throws JsonMappingException, JsonProcessingException {
+		JSONArray jsonArray = null;
+		try {
+			jsonArray = readAllJSON();
+		} catch (JSONException | IOException e) {
+			e.printStackTrace();
+		}
+		for(int i = 0; i < jsonArray.length(); i++) {
+			JSONObject jsonObject = jsonArray.getJSONObject(i);
+			String jsonObject2 = (String) jsonArray.get(i);
+			Linija newLine = mapper.readValue(jsonObject2, Linija.class);
+			observableList.add(newLine);
+		}
+	}
+	
+}

@@ -1,0 +1,28 @@
+package multicast;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.HashMap;
+
+public class MCServer {
+	
+	public static boolean work = true;
+	public static HashMap<String, MulticastSocket> mcMap = new HashMap<>();
+	
+	public static void main(String[] args) {
+		
+		try {
+			ServerSocket serverSocket = new ServerSocket(9000);
+			while(work) {
+				Socket socket = serverSocket.accept();
+				new MCServerThread(socket).start();
+			}
+		}catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

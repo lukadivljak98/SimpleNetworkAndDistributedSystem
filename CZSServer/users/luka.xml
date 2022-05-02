@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_311" class="java.beans.XMLDecoder">
+ <object class="model.Korisnik">
+  <void property="passwordHash">
+   <string>xzzrevwjUa906WELH6sR9iPN4jA0uKhbdezqG5apFP4=</string>
+  </void>
+  <void property="stanica">
+   <string>L</string>
+  </void>
+  <void property="username">
+   <string>luka</string>
+  </void>
+ </object>
+</java>

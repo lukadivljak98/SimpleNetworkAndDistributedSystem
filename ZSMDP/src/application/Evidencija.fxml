@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EvidencijaController">
+   <children>
+      <TextField fx:id="linijaTf" layoutX="226.0" layoutY="80.0" />
+      <TextField fx:id="vrijemeTf" layoutX="227.0" layoutY="145.0" />
+      <Label layoutX="153.0" layoutY="84.0" text="Naziv linije" />
+      <Label layoutX="127.0" layoutY="149.0" text="Vrijeme dolaska" />
+      <Button layoutX="272.0" layoutY="214.0" mnemonicParsing="false" onAction="#sacuvaj" text="Sacuvaj" />
+      <Button layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</AnchorPane>

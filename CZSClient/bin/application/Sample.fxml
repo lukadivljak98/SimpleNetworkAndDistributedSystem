@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="224.0" spacing="50.0">
+         <children>
+            <Label alignment="CENTER" text="Rad sa korisnicima:" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" text="Rad sa redom voznje:" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Rad sa izvjestajima:" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="224.0" prefHeight="400.0" prefWidth="368.0" spacing="20.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="24.0" prefWidth="348.0" spacing="20.0">
+               <children>
+                  <Button fx:id="dodajKorisnikaBtn" mnemonicParsing="false" onAction="#dodajKorisnika" text="Dodaj korisnika" />
+                  <Button fx:id="obrisiKorisnikaBtn" mnemonicParsing="false" onAction="#obrisiKorisnika" text="Obrisi korisnika" />
+                  <Button fx:id="sviKorisniciBtn" mnemonicParsing="false" onAction="#pregledajKorisnike" text="Svi korisnici" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#dodajLiniju" text="Dodaj liniju" />
+                  <Button mnemonicParsing="false" onAction="#obrisiLiniju" text="Obrisi liniju" />
+                  <Button mnemonicParsing="false" onAction="#pregledajRedVoznje" text="Sve linije" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#pregledajIzvjestaje" text="Pregledaj izvjestaje" />
+               </children></HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="20.0" top="70.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

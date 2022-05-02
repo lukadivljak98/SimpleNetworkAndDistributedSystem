@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://soap" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://soap" xmlns:intf="http://soap" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://soap" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="checkLogIn">
+    <complexType>
+     <sequence>
+      <element name="username" type="xsd:string"/>
+      <element name="password" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="checkLogInResponse">
+    <complexType>
+     <sequence>
+      <element name="checkLogInReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="logOut">
+    <complexType>
+     <sequence>
+      <element name="username" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="logOutResponse">
+    <complexType/>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="checkLogInRequest">
+
+      <wsdl:part element="impl:checkLogIn" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="checkLogInResponse">
+
+      <wsdl:part element="impl:checkLogInResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="logOutRequest">
+
+      <wsdl:part element="impl:logOut" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="logOutResponse">
+
+      <wsdl:part element="impl:logOutResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="SoapLogIn">
+
+      <wsdl:operation name="checkLogIn">
+
+         <wsdl:input message="impl:checkLogInRequest" name="checkLogInRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:checkLogInResponse" name="checkLogInResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="logOut">
+
+         <wsdl:input message="impl:logOutRequest" name="logOutRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:logOutResponse" name="logOutResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="SoapLogInSoapBinding" type="impl:SoapLogIn">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="checkLogIn">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="checkLogInRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="checkLogInResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="logOut">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="logOutRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="logOutResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="SoapLogInService">
+
+      <wsdl:port binding="impl:SoapLogInSoapBinding" name="SoapLogIn">
+
+         <wsdlsoap:address location="http://localhost:4200/CZSServer/services/SoapLogIn"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

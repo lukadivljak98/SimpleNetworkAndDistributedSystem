@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Luka\Desktop\MDP-Luka-Divljak\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+594412348.index
+2397596801.index
+2640665653.index
+2460000989.index
+300306857.index
+3329471207.index

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_311" class="java.beans.XMLDecoder">
+ <object class="model.Korisnik">
+  <void property="aktivan">
+   <boolean>true</boolean>
+  </void>
+  <void property="passwordHash">
+   <string>48So5owjiQCR+blTHvPg+AXOCpN41vtLvLbu1APJE0I=</string>
+  </void>
+  <void property="stanica">
+   <string>M</string>
+  </void>
+  <void property="username">
+   <string>marko</string>
+  </void>
+ </object>
+</java>

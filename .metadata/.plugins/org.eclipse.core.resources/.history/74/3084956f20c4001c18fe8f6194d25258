@@ -1,0 +1,38 @@
+package application;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+import model.Linija;
+
+public class EvidencijaController {
+
+	 @FXML
+	 private TextField linijaTf;
+
+	 @FXML
+	 private TextField vrijemeTf;
+	 
+	 private ArrayList<Linija> list;
+	 
+	 public EvidencijaController() {
+		 this.list = RedVoznjeController.evidencijaList;
+	 }
+	 
+	 public void goBack(ActionEvent event) throws IOException {
+			new Main().changeScene("RedVoznje.fxml");
+	}
+	 
+	 public void sacuvaj(ActionEvent event) throws IOException {
+		 String nazivLinije = linijaTf.getText();
+		 String vrijemeDolaska = vrijemeTf.getText();
+		 Linija linija = null;
+		 for(Linija l : this.list) {
+			 if(nazivLinije.equals(l.getNaziv()))
+				 l.setStanicaProlazak(ZSController.korisnik.getStanica());
+		 }
+	 }
+}
